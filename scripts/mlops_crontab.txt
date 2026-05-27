@@ -1,0 +1,4 @@
+# MLOps Monitor - Auto-start on boot
+# Add this line to your crontab using: crontab /root/captcharecognition/scripts/mlops_crontab.txt
+
+@reboot cd /root/captcharecognition && nohup ./scripts/monitor_mlops.sh > /dev/null 2>&1 &
